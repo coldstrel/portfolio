@@ -1,0 +1,271 @@
+:root {
+  --metal-dark: #0a0a0a;
+  --metal-blue: #1a2a3a;
+  --metallic-accent: #4a6b8a;
+  --text-color: #e0e0e0;
+  --neon-accent: #00f3ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, var(--metal-dark), var(--metal-blue));
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Sección Hero (Más pequeña) */
+.hero {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  background: linear-gradient(to right, var(--neon-accent), #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+}
+
+/* Sección de Información */
+.info-section {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(10, 10, 10, 0.9);
+  margin-bottom: 2rem;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.info-item {
+  font-size: 2rem;
+  color: var(--neon-accent);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.info-item:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+/* Sección de Proyectos */
+.project-section {
+  padding: 3rem 2rem;
+  background: rgba(10,10,10,0.7);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover en cada proyecto */
+.project-content {
+  transition: transform 0.3s ease;
+}
+
+.project-section:hover .project-content {
+  transform: scale(1.05);
+}
+
+/* Animaciones de fade-in y fade-out */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutDown {
+  from {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  to {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+}
+
+/* Ocultar secciones por defecto */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Mostrar la sección activa */
+.fade-in-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Estilo base para los proyectos */
+.project-section {
+  padding: 3rem 2rem;
+  background: rgba(10,10,10,0.7);
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  position: relative;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+/* Efecto hover en cada proyecto */
+.project-section:hover {
+  transform: scale(2.2); /* Hace zoom en el proyecto */
+  z-index: 20; /* Se eleva sobre los demás */
+  position: relative;
+  box-shadow: 0 0 30px rgba(0, 243, 255, 0.3);
+}
+
+/* Reduce la opacidad de los otros proyectos cuando uno está en hover */
+.project-section:hover ~ .project-section,
+.project-section:not(:hover) {
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+}
+
+/* Centrar el proyecto activo */
+.project-section:hover {
+  transform: scale(10.2) translateY(-10px);
+}
+
+/* Estilos para el botón de cambio de idioma */
+.language-switcher {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.language-switcher button {
+  background: var(--metallic-accent);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.language-switcher button:hover {
+  background: var(--neon-accent);
+}
+
+/* Sección Acerca de Mí */
+.about-me {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(10,10,10,0.8);
+  margin: 2rem 0;
+}
+
+/* Sección de Cursos y Habilidades */
+.skills {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(15,15,15,0.9);
+  margin: 2rem 0;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Animación de fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Sección de Cursos y Habilidades */
+.skills {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(15,15,15,0.9);
+  margin: 2rem 0;
+}
+
+/* Contenedor de certificaciones en fila */
+.certifications-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Permite que las imágenes se acomoden si la pantalla es pequeña */
+  margin-top: 20px;
+}
+
+/* Estilos individuales para cada certificación */
+.certification {
+  text-align: center;
+  max-width: 200px;
+  flex: 1;
+}
+
+/* Espaciado entre el nombre y la imagen */
+.certification p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* Estilos para las imágenes de certificaciones */
+.certification-image {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 243, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto hover en la imagen */
+.certification-image:hover {
+  transform: scale(1.1);
+}
+
+/* Ajuste para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .certifications-container {
+      flex-direction: row; /* Mantiene las imágenes en línea horizontal */
+      flex-wrap: wrap; /* Si el espacio es pequeño, se irán acomodando */
+      justify-content: center;
+  }
+
+  .certification {
+      max-width: 150px;
+  }
+
+  .certification-image {
+      width: 120px;
+  }
+}
+
+
