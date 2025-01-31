@@ -8,39 +8,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Intersection Observer para mostrar/ocultar secciones dinámicamente
-const sections = document.querySelectorAll('.fade-in');
-
-const observerOptions = {
-    threshold: 0.1, // Se activa cuando al menos el 30% de la sección es visible
-};
-
+// Configuración de Intersection Observer para mostrar/ocultar secciones
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // Cuando una sección entra en la vista, la mostramos
-            entry.target.classList.add('fade-in-visible');
-        } else {
-            // Cuando una sección deja de estar visible, la ocultamos
-            entry.target.classList.remove('fade-in-visible');
-        }
+        entry.target.classList.toggle('fade-in-visible', entry.isIntersecting);
     });
-});
+}, { threshold: 0.1 });
 
-// Observar cada sección con la clase 'fade-in'
-sections.forEach(section => observer.observe(section));
+document.querySelectorAll('.fade-in').forEach(section => observer.observe(section));
 
-// Efecto de vibración en iconos de la sección de información
+// Efecto de vibración en iconos
 document.querySelectorAll('.info-item').forEach(icon => {
     icon.addEventListener('mouseover', () => {
         icon.style.transform = 'rotate(5deg) scale(1.2)';
     });
-
     icon.addEventListener('mouseout', () => {
         icon.style.transform = 'rotate(0deg) scale(1)';
     });
 });
-
 // Traducciones en diferentes idiomas
 const translations = {
     en: {
@@ -83,7 +68,6 @@ const translations = {
     }
 };
 
-// Función para cambiar el idioma
 function changeLanguage(lang) {
     document.querySelectorAll("[data-lang]").forEach(element => {
         const key = element.getAttribute("data-lang");

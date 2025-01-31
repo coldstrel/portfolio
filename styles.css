@@ -19,7 +19,6 @@ body {
   line-height: 1.6;
 }
 
-/* Sección Hero (Más pequeña) */
 .hero {
   height: 20vh;
   display: flex;
@@ -36,7 +35,6 @@ body {
   text-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
 }
 
-/* Sección de Información */
 .info-section {
   text-align: center;
   padding: 1rem;
@@ -61,61 +59,6 @@ body {
   color: #ffffff;
 }
 
-/* Sección de Proyectos */
-.project-section {
-  padding: 3rem 2rem;
-  background: rgba(10,10,10,0.7);
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-/* Efecto hover en cada proyecto */
-.project-content {
-  transition: transform 0.3s ease;
-}
-
-.project-section:hover .project-content {
-  transform: scale(1.05);
-}
-
-/* Animaciones de fade-in y fade-out */
-@keyframes fadeInUp {
-  from {
-      opacity: 0;
-      transform: translateY(50px);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
-
-@keyframes fadeOutDown {
-  from {
-      opacity: 1;
-      transform: translateY(0);
-  }
-  to {
-      opacity: 0;
-      transform: translateY(50px);
-  }
-}
-
-/* Ocultar secciones por defecto */
-.fade-in {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-/* Mostrar la sección activa */
-.fade-in-visible {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-  animation: fadeInUp 0.5s ease-out forwards;
-}
-
-/* Estilo base para los proyectos */
 .project-section {
   padding: 3rem 2rem;
   background: rgba(10,10,10,0.7);
@@ -126,27 +69,18 @@ body {
   margin: 2rem auto;
 }
 
-/* Efecto hover en cada proyecto */
 .project-section:hover {
-  transform: scale(2.2); /* Hace zoom en el proyecto */
-  z-index: 20; /* Se eleva sobre los demás */
-  position: relative;
+  transform: scale(1.2);
+  z-index: 20;
   box-shadow: 0 0 30px rgba(0, 243, 255, 0.3);
 }
 
-/* Reduce la opacidad de los otros proyectos cuando uno está en hover */
 .project-section:hover ~ .project-section,
 .project-section:not(:hover) {
   opacity: 0.8;
   transition: opacity 0.5s ease;
 }
 
-/* Centrar el proyecto activo */
-.project-section:hover {
-  transform: scale(10.2) translateY(-10px);
-}
-
-/* Estilos para el botón de cambio de idioma */
 .language-switcher {
   text-align: center;
   margin: 10px 0;
@@ -166,70 +100,32 @@ body {
   background: var(--neon-accent);
 }
 
-/* Sección Acerca de Mí */
-.about-me {
-  text-align: center;
-  padding: 2rem;
-  background: rgba(10,10,10,0.8);
-  margin: 2rem 0;
-}
-
-/* Sección de Cursos y Habilidades */
 .skills {
   text-align: center;
   padding: 2rem;
-  background: rgba(15,15,15,0.9);
+  background: rgba(15, 15, 15, 0.9);
   margin: 2rem 0;
 }
 
-.skills ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.skills li {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
-/* Animación de fade-in */
-.fade-in {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.fade-in-visible {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-
-/* Sección de Cursos y Habilidades */
-.skills {
-  text-align: center;
-  padding: 2rem;
-  background: rgba(15,15,15,0.9);
-  margin: 2rem 0;
-}
-
-/* Contenedor de certificaciones en fila */
 .certifications-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap; /* Permite que las imágenes se acomoden si la pantalla es pequeña */
+  justify-content: center;  /* Centra los elementos en el contenedor */
+  align-items: center;      /* Alinea las imágenes verticalmente */
+  gap: 30px;                /* Espacio entre las certificaciones */
+  flex-wrap: wrap;          /* Permite que se acomoden en varias filas si el tamaño de la pantalla es pequeño */
   margin-top: 20px;
 }
 
-/* Estilos individuales para cada certificación */
 .certification {
   text-align: center;
   max-width: 200px;
   flex: 1;
+  display: flex;
+  flex-direction: column;    /* Alinea el texto encima de la imagen */
+  align-items: center;      /* Alinea los elementos en el centro */
+  justify-content: center;  /* Alinea los elementos en el centro */
 }
 
-/* Espaciado entre el nombre y la imagen */
 .certification p {
   font-size: 1rem;
   margin-bottom: 10px;
@@ -237,16 +133,21 @@ body {
   color: var(--text-color);
 }
 
-/* Estilos para las imágenes de certificaciones */
+.certification-image-container {
+  height: 180px;  /* Establece la altura para las imágenes */
+  display: flex;
+  justify-content: center; /* Centra las imágenes dentro del contenedor */
+  align-items: center;     /* Alinea las imágenes verticalmente */
+}
+
 .certification-image {
-  width: 150px;
+  max-width: 150px;  /* Limita el tamaño máximo de las imágenes */
   height: auto;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 243, 255, 0.3);
   transition: transform 0.3s ease-in-out;
 }
 
-/* Efecto hover en la imagen */
 .certification-image:hover {
   transform: scale(1.1);
 }
@@ -254,18 +155,17 @@ body {
 /* Ajuste para pantallas más pequeñas */
 @media (max-width: 768px) {
   .certifications-container {
-      flex-direction: row; /* Mantiene las imágenes en línea horizontal */
-      flex-wrap: wrap; /* Si el espacio es pequeño, se irán acomodando */
-      justify-content: center;
+    flex-direction: row;   /* Mantiene las imágenes en línea horizontal */
+    flex-wrap: wrap;        /* Si el espacio es pequeño, se irán acomodando */
+    justify-content: center;
   }
 
   .certification {
-      max-width: 150px;
+    max-width: 150px;
   }
 
   .certification-image {
-      width: 120px;
+    width: 120px;
   }
 }
-
 
