@@ -9,14 +9,12 @@
 </head>
 <body>
 
-    <!-- Botón para cambiar el idioma -->
     <div class="language-switcher">
-        <button onclick="changeLanguage('en')">🇬🇧 English</button>
-        <button onclick="changeLanguage('fr')">🇫🇷 Français</button>
-        <button onclick="changeLanguage('de')">🇩🇪 Deutsch</button>
+        <button onclick="changeLanguage('en')">🇬🇧</button>
+        <button onclick="changeLanguage('fr')">🇫🇷</button>
+        <button onclick="changeLanguage('de')">🇩🇪</button>
     </div>
 
-    <!-- Sección Hero -->
     <section class="hero fade-in">
         <div class="hero-content">
             <h1 data-lang="name">Aldo Fernández</h1>
@@ -24,124 +22,110 @@
         </div>
     </section>
 
-    <!-- Sección Acerca de Mí -->
     <section class="about-me fade-in">
         <h2 data-lang="about-title">Acerca de Mí</h2>
         <p data-lang="about-text">
-            Soy estudiante de maestría en la Universidad de Luxemburgo con experiencia en auditoría de TI,
-            ciberseguridad, bases de datos e inteligencia artificial. Me especializo en NLP, IA generativa y modelos de lenguaje.
+            Soy estudiante de maestría en la Universidad de Luxemburgo con experiencia en auditoría de TI, ciberseguridad, bases de datos e inteligencia artificial. Me especializo en NLP, IA generativa y modelos de lenguaje.
         </p>
     </section>
 
-    <!-- Sección de Proyectos -->
     <main class="container">
-        <!-- Proyecto 1 -->
-        <section class="project-section fade-in">
-            <h2 class="metallic-title" data-lang="project1-title">Exploring Gender Prediction with Name Data
-            </h2>
-            <div class="project-content">
-                <div class="project-images">
-                    <img src="ruta-imagen1.jpg" alt="Proyecto 1" class="project-image">
-                </div>
-                <div class="project-details">
-                    <p data-lang="project1-desc">This project aims to predict gender based on first names using machine learning models. This analysis explores how name data can reveal trends in societal naming conventions and be used effectively for gender prediction.</p>
-                    <div class="tech-stack">
-                        <span class="tech-item">Python</span>
-                        <span class="tech-item">PyTorch</span>
-                        <span class="tech-item">Logistic Regression</span>
-                        <span class="tech-item">LightGBM</span>
-                    </div>
-                    <a href="https://github.com/coldstrel/ML_project", target="_blank" class="project-link">Ver en GitHub</a>
-                </div>
-            </div>
-        </section>
-        <!-- Proyecto 2-->
-        <section class="project-section fade-in">
-            <h2 class="metallic-title" data-lang="project1-title">R Reproducible Pipeline</h2>
-            <div class="project-content">
-                <div class="project-images">
-                    <img src="ruta-imagen1.jpg" alt="Proyecto 1" class="project-image">
-                </div>
-                <div class="project-details">
-                    <p data-lang="project1-desc">Reproducible pipeline in R to deploy a shiny app with honey bee data in USA.</p>
-                    <div class="tech-stack">
-                        <span class="tech-item">R</span>
-                        <span class="tech-item">Docker</span>
-                        <span class="tech-item">Shiny App</span>
-                        <span class="tech-item">Targets pipeline</span>
-                    </div>
-                    <a href="https://github.com/coldstrel/bees_app", target="_blank" class="project-link">Ver en GitHub</a>
-                </div>
-            </div>
-        </section>
-        <!-- Proyecto 3-->
-        <section class="project-section fade-in">
-            <h2 class="metallic-title" data-lang="project1-title">LetzGPT</h2>
-            <div class="project-content">
-                <div class="project-images">
-                    <img src="ruta-imagen1.jpg" alt="Proyecto 1" class="project-image">
-                </div>
-                <div class="project-details">
-                    <p data-lang="project1-desc">Chatbot designed with Langchain and OpenAI to discover Luxembourg.</p>
-                    <div class="tech-stack">
-                        <span class="tech-item">Python</span>
-                        <span class="tech-item">Langchain</span>
-                        <span class="tech-item">RAG</span>
-                        <span class="tech-item">Chatbot</span>
-                        <span class="tech-item">OpenAI API</span>
-                    </div>
-                    <a href="https://github.com/othmane-mahfoud/travel-agent-luxembourg", target="_blank" class="project-link">Ver en GitHub</a>
-                </div>
-            </div>
-        </section>
+       
 
-        <!-- Se pueden agregar más proyectos aquí -->
+        <section class="projects-container">
+            <h2 class="metallic-title" data-lang="projects-title">My Projects</h2>
+            <div class="projects-grid">
+        
+                <div class="project-card">
+                    <h3 class="project-title" data-lang="project1-title">Exploring Gender Prediction with Name Data</h3>
+                    <p class="project-desc" data-lang="project1-desc">This project aims to predict gender based on first names using machine learning models.</p>
+                    <ul class="tech-stack">
+                        <li>Python</li>
+                        <li>PyTorch</li>
+                        <li>Logistic Regression</li>
+                        <li>LightGBM</li>
+                    </ul>
+                    <a href="https://github.com/coldstrel/ML_project" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+        
+                <div class="project-card">
+                    <h3 class="project-title" data-lang="project2-title">R Reproducible Pipeline</h3>
+                    <p class="project-desc" data-lang="project2-desc">Reproducible pipeline in R to deploy a shiny app with honey bee data in the USA.</p>
+                    <ul class="tech-stack">
+                        <li>R</li>
+                        <li>Docker</li>
+                        <li>Shiny App</li>
+                        <li>Targets pipeline</li>
+                    </ul>
+                    <a href="https://github.com/coldstrel/bees_app" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+        
+                <div class="project-card">
+                    <h3 class="project-title" data-lang="project3-title">LetzGPT</h3>
+                    <p class="project-desc" data-lang="project3-desc">Chatbot designed with Langchain and OpenAI to discover Luxembourg.</p>
+                    <ul class="tech-stack">
+                        <li>Python</li>
+                        <li>Langchain</li>
+                        <li>RAG</li>
+                        <li>Chatbot</li>
+                        <li>OpenAI API</li>
+                    </ul>
+                    <a href="https://github.com/othmane-mahfoud/travel-agent-luxembourg" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+                
+                
+            </div>
+        </section>
+        
+        
 
+
+        
     </main>
 
-  <!-- Sección de Cursos y Habilidades -->
-<section class="skills fade-in">
-    <h2 data-lang="skills-title">Cursos y Habilidades</h2>
-    <ul>
-        <li data-lang="skill1">Machine Learning con Python</li>
-        <li data-lang="skill2">Procesamiento de Lenguaje Natural</li>
-        <li data-lang="skill3">Modelos de Lenguaje de Gran Escala</li>
-    </ul>
+    <section class="skills fade-in">
+        <h2 data-lang="skills-title">Cursos y Habilidades</h2>
+        <ul>
+            <li data-lang="skill1">Machine Learning con Python</li>
+            <li data-lang="skill2">Procesamiento de Lenguaje Natural</li>
+            <li data-lang="skill3">Modelos de Lenguaje de Gran Escala</li>
+        </ul>
 
-    <div class="certifications-container">
-        <!-- AWS Solutions Architect -->
-        <div class="certification">
-            <p>AWS AI Practitioner</p>
-            <img src="images/ai-practitioner.png" alt="AWS Solutions Architect Badge" class="certification-image">
+        <div class="certifications-container">
+            <div class="certification">
+                <p>AWS AI Practitioner</p>
+                <div class="certification-image-container">
+                    <img src="images/ai-practitioner.png" alt="AWS AI Practitioner Badge" class="certification-image">
+                </div>
+            </div>
+            <div class="certification">
+                <p>AWS Solutions Architect</p>
+                <div class="certification-image-container">
+                    <img src="images/solutions-architect.png" alt="AWS Solutions Architect Badge" class="certification-image">
+                </div>
+            </div>
+            <div class="certification">
+                <p>AWS ML Engineer</p>
+                <div class="certification-image-container">
+                    <img src="images/machine-learning.engineer.png" alt="AWS Machine Learning  Badge" class="certification-image">
+                </div>
+            </div>
+            <div class="certification">
+                <p>AWS Data Engineer</p>
+                <div class="certification-image-container">
+                    <img src="images/data-engineer.png" alt="AWS Data Engineer Badge" class="certification-image">
+                </div>
+            </div>
+            <div class="certification">
+                <p>AWS Machine Learning</p>
+                <div class="certification-image-container">
+                    <img src="images/machine-learning.png" alt="AWS Machine Learning Badge" class="certification-image">
+                </div>
+            </div>
         </div>
-        <!-- AWS Solutions Architect -->
-        <div class="certification">
-            <p>AWS Solutions Architect</p>
-            <img src="images/solutions-architect.png" alt="AWS Solutions Architect Badge" class="certification-image">
-        </div>
+        
+    </section>
 
-        <!-- AWS Machine Learning Engineer -->
-        <div class="certification">
-            <p>AWS Machine Learning Engineer</p>
-            <img src="images/machine-learning.engineer.png" alt="AWS Machine Learning Engineer Badge" class="certification-image">
-        </div>
-
-        <!-- AWS Data Engineer -->
-        <div class="certification">
-            <p>AWS Data Engineer</p>
-            <img src="images/data-engineer.png" alt="AWS Data Engineer Badge" class="certification-image">
-        </div>
-
-        <!-- AWS Machine Learning -->
-        <div class="certification">
-            <p>AWS Machine Learning</p>
-            <img src="images/machine-learning.png" alt="AWS Machine Learning Badge" class="certification-image">
-        </div>
-    </div>
-</section>
-
-
-    <!-- Sección de Contacto -->
     <footer class="footer fade-in">
         <section class="info-section">
             <div class="info-container">
