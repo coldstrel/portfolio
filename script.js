@@ -7,7 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
+//comment
 // Configuración de Intersection Observer para mostrar/ocultar secciones
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
