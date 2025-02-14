@@ -29,43 +29,69 @@ document.querySelectorAll('.info-item').forEach(icon => {
 // Traducciones en diferentes idiomas
 const translations = {
     en: {
-      "about-title": "About Me",
-      "about-text": "I am a master's student at the University of Luxembourg with experience in IT Audit, Cybersecurity, Databases, and AI. My focus is on NLP, Generative AI, and Large Language Models.",
-      "project1-title": "Exploring Gender Prediction with Name Data",
-      "project1-desc": "This project aims to predict gender based on first names using machine learning models.",
-      "project2-title": "R Reproducible Pipeline",
-      "project2-desc": "Reproducible pipeline in R to deploy a shiny app with honey bee data in USA.",
-      "project3-title": "LetzGPT",
-      "project3-desc": "Chatbot designed with Langchain and OpenAI to discover Luxembourg.",
+        "name": "Aldo FERNANDEZ",
+        "subtitle": "Data Scientist | Machine Learning and NLP Enthusiast",
+        "about-title": "About Me",
+        "about-text": "Hello, my name is Aldo, a Master’s student in Data Science at the University of Luxembourg with a strong foundation in computer science, data analysis, and machine learning. My expertise spans across statistical modeling, network analysis, natural language processing (NLP), and Generative AI, with hands-on experience in deep learning frameworks like TensorFlow and traditional machine learning libraries such as Scikit-Learn.<br><br> I am passionate about applying data science techniques to solve complex, real-world problems, from computer vision and image analysis to AI-powered automation and workplace optimization. My technical strengths include Python, Scikit-Learn, TensorFlow, NLP, Generative AI, and API integrations, complemented by strong analytical and visualization skills in Excel, PowerPoint, and GIS tools.",
+
+        "projects-title": "My Projects",
+        "skills-title": "Technical Skills & Tools",
+        "project1-title": "Exploring Gender Prediction with Name Data",
+        "project1-desc": "This project aims to predict gender based on first names using machine learning models.",
+        "project2-title": "R Reproducible Pipeline",
+        "project2-desc": "Reproducible pipeline in R to deploy a shiny app with honey bee data in the USA.",
+        "project3-title": "LetzGPT",
+        "project3-desc": "Chatbot designed with Langchain and OpenAI to discover Luxembourg.",
+        "project4-title": "RAG Agents R1",
+        "project4-desc": "Agentic RAG using DeepSeek R1 locally and Hugging Face embeddings.",
+        "project5-title": "UAV LiDAR Tree Detection",
+        "project5-desc": "Detection of individual trees from LiDAR data using Neural Networks.",
     },
     fr: {
-      "about-title": "À Propos de Moi",
-      "about-text": "Je suis étudiant en master à l'Université du Luxembourg avec une expérience en audit IT, cybersécurité, bases de données et intelligence artificielle. Mon expertise porte sur le NLP, l'IA générative et les modèles de langage.",
-      "project1-title": "Prédiction du Genre avec les Données des Prénoms",
-      "project1-desc": "Ce projet vise à prédire le genre basé sur les prénoms en utilisant des modèles d'apprentissage automatique.",
-      "project2-title": "Pipeline Reproductible en R",
-      "project2-desc": "Pipeline reproductible en R pour déployer une application Shiny avec des données d'abeilles aux USA.",
-      "project3-title": "LetzGPT",
-      "project3-desc": "Chatbot conçu avec Langchain et OpenAI pour découvrir le Luxembourg.",
+        "name": "Aldo FERNANDEZ",
+        "subtitle": "Scientifique des données | Passionné par le Machine Learning et le NLP",
+        "about-title": "À Propos de Moi",
+        "about-text": "Bonjour, je m'appelle Aldo, étudiant en Master en Science des Données à l'Université du Luxembourg, avec une solide formation en informatique, analyse de données et apprentissage automatique. Mon expertise couvre la modélisation statistique, l'analyse de réseaux, le traitement du langage naturel (NLP) et l'IA générative, avec une expérience pratique dans les frameworks de deep learning comme TensorFlow et les bibliothèques d'apprentissage automatique classiques telles que Scikit-Learn.<br><br> Je suis passionné par l'application des techniques de science des données pour résoudre des problèmes complexes et concrets, allant de la vision par ordinateur et l'analyse d'images à l'automatisation alimentée par l'IA et l'optimisation du lieu de travail. Mes compétences techniques incluent Python, Scikit-Learn, TensorFlow, NLP, IA générative et intégrations API, ainsi que des compétences solides en analyse et visualisation de données avec Excel, PowerPoint et les outils SIG.",
+
+        "projects-title": "Mes Projets",
+        "skills-title": "Compétences Techniques & Outils",
+        "project1-title": "Prédiction du Genre avec les Données des Prénoms",
+        "project1-desc": "Ce projet vise à prédire le genre basé sur les prénoms en utilisant des modèles de machine learning.",
+        "project2-title": "Pipeline Reproductible en R",
+        "project2-desc": "Pipeline reproductible en R pour déployer une application Shiny avec des données sur les abeilles aux USA.",
+        "project3-title": "LetzGPT",
+        "project3-desc": "Chatbot conçu avec Langchain et OpenAI pour découvrir le Luxembourg.",
+        "project4-title": "Agents RAG R1",
+        "project4-desc": "RAG agentique utilisant DeepSeek R1 localement et des embeddings Hugging Face.",
+        "project5-title": "Détection des Arbres LiDAR",
+        "project5-desc": "Détection d’arbres individuels à partir de données LiDAR en utilisant des réseaux neuronaux.",
     },
     de: {
-      "about-title": "Über mich",
-      "about-text": "Ich bin Masterstudent an der Universität Luxemburg mit Erfahrung in IT-Audit, Cybersicherheit, Datenbanken und KI. Mein Fokus liegt auf NLP, generativer KI und großen Sprachmodellen.",
-      "project1-title": "Gendervorhersage mit Namensdaten",
-      "project1-desc": "Dieses Projekt zielt darauf ab, das Geschlecht basierend auf Vornamen mit maschinellen Lernmodellen vorherzusagen.",
-      "project2-title": "Reproduzierbare Pipeline in R",
-      "project2-desc": "Reproduzierbare Pipeline in R zur Bereitstellung einer Shiny-App mit Honigbienen-Daten in den USA.",
-      "project3-title": "LetzGPT",
-      "project3-desc": "Chatbot entwickelt mit Langchain und OpenAI, um Luxemburg zu entdecken.",
+        "name": "Aldo FERNANDEZ",
+        "subtitle": "Datenwissenschaftler | Begeistert von Machine Learning und NLP",
+        "about-title": "Über mich",
+        "about-text": "Hallo, mein Name ist Aldo. Ich bin Masterstudent in Datenwissenschaft an der Universität Luxemburg mit einer soliden Grundlage in Informatik, Datenanalyse und maschinellem Lernen. Meine Fachkenntnisse umfassen statistische Modellierung, Netzwerkanalyse, natürliche Sprachverarbeitung (NLP) und Generative KI, mit praktischer Erfahrung in Deep-Learning-Frameworks wie TensorFlow sowie traditionellen maschinellen Lernbibliotheken wie Scikit-Learn.<br><br> Ich bin begeistert davon, Datenwissenschaftstechniken anzuwenden, um komplexe, reale Probleme zu lösen – von Computer Vision und Bildanalyse bis hin zu KI-gestützter Automatisierung und Arbeitsplatzoptimierung. Meine technischen Stärken umfassen Python, Scikit-Learn, TensorFlow, NLP, Generative KI und API-Integrationen sowie starke analytische und Visualisierungsfähigkeiten in Excel, PowerPoint und GIS-Tools.",
+        "projects-title": "Meine Projekte",
+        "skills-title": "Technische Fähigkeiten & Werkzeuge",
+        "project1-title": "Geschlechtsvorhersage mit Namensdaten",
+        "project1-desc": "Dieses Projekt zielt darauf ab, das Geschlecht basierend auf Vornamen mit maschinellen Lernmodellen vorherzusagen.",
+        "project2-title": "Reproduzierbare Pipeline in R",
+        "project2-desc": "Reproduzierbare Pipeline in R zur Bereitstellung einer Shiny-App mit Honigbienen-Daten in den USA.",
+        "project3-title": "LetzGPT",
+        "project3-desc": "Chatbot entwickelt mit Langchain und OpenAI, um Luxemburg zu entdecken.",
+        "project4-title": "RAG-Agenten R1",
+        "project4-desc": "Agentisches RAG mit DeepSeek R1 lokal und Hugging Face Einbettungen.",
+        "project5-title": "LiDAR-Baumdetektion",
+        "project5-desc": "Erkennung einzelner Bäume aus LiDAR-Daten mit neuronalen Netzwerken.",
     }
-  };
-  
+};
 
 function changeLanguage(lang) {
     document.querySelectorAll("[data-lang]").forEach(element => {
         const key = element.getAttribute("data-lang");
         if (translations[lang][key]) {
-            element.textContent = translations[lang][key];
+            element.innerHTML = translations[lang][key];
         }
     });
 }
+

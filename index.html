@@ -10,12 +10,20 @@
 <body>
 
     <div class="language-switcher">
-        <button onclick="changeLanguage('en')">🇬🇧</button>
-        <button onclick="changeLanguage('fr')">🇫🇷</button>
-        <button onclick="changeLanguage('de')">🇩🇪</button>
+        <button onclick="changeLanguage('en')">🇬🇧
+            <img src="https://flagcdn.com/w20/um.png" srcset="https://flagcdn.com/w40/um.png 2x" width="20"
+                alt="United States Minor Outlying Islands">
+        </button>
+        <button onclick="changeLanguage('fr')">🇫🇷
+            <img src="https://flagcdn.com/w20/fr.png" srcset="https://flagcdn.com/w40/fr.png 2x" width="20" alt="France">
+        </button>
+        <button onclick="changeLanguage('de')">🇩🇪
+            <img src="https://flagcdn.com/w20/de.png" srcset="https://flagcdn.com/w40/de.png 2x" width="20" alt="Germany">
+        </button>
     </div>
 
     <section class="hero fade-in">
+        <div class="hero-background"></div>
         <div class="hero-content">
             <h1 data-lang="name">Aldo FERNANDEZ</h1>
             <p class="subtitle" data-lang="subtitle">Data Scientist | Machine Learning and NLP Enthusiast</p>
@@ -82,7 +90,7 @@
 
                 <div class="project-card">
                     <h3 class="project-title" data-lang="project4-title">RAG Agents R1</h3>
-                    <p class="project-desc" data-lang="project3-desc">Agentic RAG using DeepSeek r1 locally and huggingface embeddings.</p>
+                    <p class="project-desc" data-lang="project4-desc">Agentic RAG using DeepSeek r1 locally and huggingface embeddings.</p>
                     <ul class="tech-stack">
                         <li>Python</li>
                         <li>Hugging Face</li>
@@ -96,8 +104,8 @@
                 <!-- Project5  -->
 
                 <div class="project-card">
-                    <h3 class="project-title" data-lang="project4-title">UAV LiDAR Tree detection in mixed forests </h3>
-                    <p class="project-desc" data-lang="project3-desc">Detection of individual trees from a LiDAR point ccloud data applying Neural Networks to identify the locations of tree tops and compare the detected trees with the ground truth field inventory data.</p>
+                    <h3 class="project-title" data-lang="project5-title">UAV LiDAR Tree detection in mixed forests </h3>
+                    <p class="project-desc" data-lang="project5-desc">Detection of individual trees from a LiDAR point ccloud data applying Neural Networks to identify the locations of tree tops and compare the detected trees with the ground truth field inventory data.</p>
                     <ul class="tech-stack">
                         <li>Python</li>
                         <li>PointNet++</li>
@@ -119,13 +127,19 @@
 
     <section class="skills fade-in">
         <h2 data-lang="skills-title">Technical Skills & Tools</h2>
-        <ul>
-            <li data-lang="skill1">Machine Learning with Python (Scikit-Learn, TensorFlow, Pytorch, OpenAI API)</li>
-            <li data-lang="skill2">Natural Language Processing</li>
-            <li data-lang="skill3">Large Language models</li>
-            <li data-lang="skill3">GenerativeAI (BERT, Transformers)</li>
-            <li data-lang="skill3">Data Analysis, Visualization and Reporting</li>
-            <li data-lang="skill3">Cloud and API integration</li>
+        <ul class="skills-list">
+            <li><i class="fas fa-brain"></i> <strong>Machine Learning:&nbsp&nbsp&nbsp </strong> Scikit-Learn, TensorFlow, PyTorch, OpenAI API
+            </li>
+            <li><i class="fas fa-language"></i> <strong>Natural Language Processing:&nbsp&nbsp&nbsp </strong> Text Analysis, Named Entity
+                Recognition (NER), Sentiment Analysis</li>
+            <li><i class="fas fa-robot"></i> <strong>Large Language Models:&nbsp&nbsp&nbsp </strong> GPT, BERT, Transformer-based architectures
+            </li>
+            <li><i class="fas fa-cogs"></i> <strong>Generative AI: &nbsp&nbsp&nbsp</strong> Text Generation, Image Synthesis, Prompt Engineering
+            </li>
+            <li><i class="fas fa-chart-bar"></i> <strong>Data Analysis & Visualization:&nbsp&nbsp&nbsp </strong>  Pandas, Matplotlib, Seaborn,
+                Power BI, Tableau</li>
+            <li><i class="fas fa-cloud"></i> <strong>Cloud & API Integration:&nbsp&nbsp&nbsp</strong> Google Cloud, AWS, RESTful APIs, OpenAI
+                API</li>
         </ul>
 
         <div class="certifications-container">
@@ -141,12 +155,13 @@
                     <img src="images/solutions-architect.png" alt="AWS Solutions Architect Badge" class="certification-image">
                 </div>
             </div>
-            <!-- <div class="certification">
-                <p>AWS ML Engineer</p>
+            <div class="certification">
+                <p>Azure Fundamentals</p>
                 <div class="certification-image-container">
-                    <img src="images/machine-learning.engineer.png" alt="AWS Machine Learning  Badge" class="certification-image">
+                    <img src="images/azure-fundamentals.png" alt="Azure Fundamentals Badge" class="certification-image">
                 </div>
             </div>
+            <!-- 
             <div class="certification">
                 <p>AWS Data Engineer</p>
                 <div class="certification-image-container">
