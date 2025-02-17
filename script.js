@@ -46,6 +46,8 @@ const translations = {
         "project4-desc": "Agentic RAG using DeepSeek R1 locally and Hugging Face embeddings.",
         "project5-title": "UAV LiDAR Tree Detection",
         "project5-desc": "Detection of individual trees from LiDAR data using Neural Networks.",
+        "project6-title": "Tableau visualization of Bikes in NY",
+        "project6-desc": "A data-driven analysis of bike-sharing usage, exploring demand patterns, user behavior, and trip trends using python and Tableau.",
     },
     fr: {
         "name": "Aldo FERNANDEZ",
@@ -65,6 +67,8 @@ const translations = {
         "project4-desc": "RAG agentique utilisant DeepSeek R1 localement et des embeddings Hugging Face.",
         "project5-title": "Détection des Arbres LiDAR",
         "project5-desc": "Détection d’arbres individuels à partir de données LiDAR en utilisant des réseaux neuronaux.",
+        "project6-title": "Visualisation Tableau des vélos à New York",
+        "project6-desc": "Une analyse basée sur les données de l'utilisation des vélos en libre-service, explorant les tendances de la demande, le comportement des utilisateurs et les trajets à l'aide de Python et Tableau.",
     },
     de: {
         "name": "Aldo FERNANDEZ",
@@ -83,6 +87,8 @@ const translations = {
         "project4-desc": "Agentisches RAG mit DeepSeek R1 lokal und Hugging Face Einbettungen.",
         "project5-title": "LiDAR-Baumdetektion",
         "project5-desc": "Erkennung einzelner Bäume aus LiDAR-Daten mit neuronalen Netzwerken.",
+        "project6-title": "Tableau-Visualisierung von Fahrrädern in New York",
+        "project6-desc": "Eine datengetriebene Analyse der Fahrrad-Sharing-Nutzung, die Nachfrage-Muster, Nutzerverhalten und Fahrtrends mit Python und Tableau untersucht",
     }
 };
 
