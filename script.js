@@ -48,6 +48,8 @@ const translations = {
         "project5-desc": "Detection of individual trees from LiDAR data using Neural Networks.",
         "project6-title": "Tableau visualization of Bikes in NY",
         "project6-desc": "A data-driven analysis of bike-sharing usage, exploring demand patterns, user behavior, and trip trends using python and Tableau.",
+        "project7-title": "X-RAY Pneumonua Classifier",
+        "project7-desc": "A deep learning model using ResNet18 to detect pneumonia from chest X-rays, deployed as a serverless application with RunPod.",
     },
     fr: {
         "name": "Aldo FERNANDEZ",
@@ -69,6 +71,8 @@ const translations = {
         "project5-desc": "Détection d’arbres individuels à partir de données LiDAR en utilisant des réseaux neuronaux.",
         "project6-title": "Visualisation Tableau des vélos à New York",
         "project6-desc": "Une analyse basée sur les données de l'utilisation des vélos en libre-service, explorant les tendances de la demande, le comportement des utilisateurs et les trajets à l'aide de Python et Tableau.",
+        "project7-title": "Classificateur de Pneumonie par Rayons X",
+        "project7-desc": "Un modèle d’apprentissage profond utilisant ResNet18 pour détecter la pneumonie à partir de radiographies pulmonaires, déployé comme une application sans serveur avec RunPod.",
     },
     de: {
         "name": "Aldo FERNANDEZ",
@@ -89,6 +93,8 @@ const translations = {
         "project5-desc": "Erkennung einzelner Bäume aus LiDAR-Daten mit neuronalen Netzwerken.",
         "project6-title": "Tableau-Visualisierung von Fahrrädern in New York",
         "project6-desc": "Eine datengetriebene Analyse der Fahrrad-Sharing-Nutzung, die Nachfrage-Muster, Nutzerverhalten und Fahrtrends mit Python und Tableau untersucht",
+        "project7-title": "Röntgen-Pneumonie-Klassifikator",
+        "project7-desc": "Ein Deep-Learning-Modell mit ResNet18 zur Erkennung von Pneumonie auf Röntgenbildern, als serverlose Anwendung mit RunPod bereitgestellt.",
     }
 };
 
